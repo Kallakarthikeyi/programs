@@ -1,0 +1,29 @@
+#include<stdio.h>
+int fact(int a){
+	int i,fact=1;
+	for(i=1;i<=a;i++)
+	fact*=i;
+	return fact;
+}
+int strongnum(int d){
+	int k,g;
+	k=d;
+	int s=0;
+	while(k>0){
+	g=k%10;
+		k=k/10;
+	s=s+fact(g);	
+	}
+	if(s==d)
+	printf("strong number\n");
+	else
+	printf("no");
+	return 0;
+}
+int main(){
+	int a;
+	scanf("%d",&a);
+strongnum(a);
+	
+	return 0;
+}
