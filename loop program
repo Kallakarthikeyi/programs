@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+	int a,ba=0,sa=0,aa=0,i;
+	for(i=1;i<=3;i++){
+		printf("enter age in years:\n");
+		scanf("%d",&a);
+		if(a>=1&&a<=5)ba++;
+			if(a>=6&&a<=18)sa++;
+				if(a>=19&&a<=100)aa++;
+	}
+	printf("baby age members:%d\n",ba);
+	printf("school age members:%d\n",sa);
+	printf("adult age members:%d",aa);
+	return 0;
+}
